@@ -1,4 +1,12 @@
 .venue-search-item {
   background-color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  padding: 10px 5px;
+  min-height: 80px;
+}
+
+img.featured {
+  max-height: 80px;
+
+  float: right;
 }

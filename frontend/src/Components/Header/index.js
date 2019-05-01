@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.png'
 
-export default function Header() {
+export default function Header () {
     return <header className="govuk-header " role="banner" data-module="header">
         <div className="govuk-header__container govuk-width-container">
 
