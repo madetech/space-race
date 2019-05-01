@@ -1,17 +1,15 @@
 import React from 'react'
-import Header from './Components/Header'
 import Footer from './Components/Footer'
 import './App.scss'
 import VenueSearchItem from './Components/VenueSearchItem'
 
 function App () {
     return <>
-        <Header />
         <div className="govuk-width-container">
             <main className="govuk-main-wrapper">
                 <div className="govuk-grid-row">
                     <div className="govuk-grid-column-two-thirds">
-                        Search Bar
+                        <a href="#">Location</a><a href="#">Size</a><a href="#"></a>
                     </div>
                     <div className="govuk-grid-column-two-thirds venue-search-items">
                         <VenueSearchItem />
