@@ -24,3 +24,11 @@ img.featured {
   width: 66%;
   display: inline-block;
 }
+.venue-image {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 229px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
