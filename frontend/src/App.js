@@ -17,7 +17,7 @@ function App () {
           <Route path="/form" render={() => <BookingForm />} />
           <Route exact path="/" render={() => <SearchPage />} />
           <Route exact path="/venue/" render={() => <VenuePage />} />
-          <Route exact path="/bookingconfirmation/" render={() => <BookingConfirmation/>} />
+          <Route exact path="/booking-confirmation/" render={() => <BookingConfirmation/>} />
           <Route exact path="/" render={({history}) => <SearchPage history={history}/>} />
           <Route path="/venue/:id" render={({match}) => <VenuePage id={match.params.id} />} />
       </Router>
