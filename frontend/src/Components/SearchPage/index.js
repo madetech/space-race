@@ -25,6 +25,11 @@ export default function SearchPage () {
         })
     })
 
+    const filteredVenues = venues.filter(venue => {
+        const [lowerBound, upperBound] = capacityRangeSlider
+        return venue.HACK_MEETING_SIZE >= lowerBound && venue.HACK_MEETING_SIZE <= upperBound
+    })
+
     console.log(venues)
 
     return <GridRow>
@@ -51,7 +56,7 @@ export default function SearchPage () {
           <br /><br />
       </GridColumn>
       <GridColumn className="venue-search-items">
-        {venues.map(venue => <VenueSearchItem siteName={venue.SITE_NAME} />)}
+        {filteredVenues.map(venue => <VenueSearchItem siteName={venue.SITE_NAME} />)}
       </GridColumn>
     </GridRow>
 }
