@@ -22,6 +22,7 @@ export default function BookingForm () {
       </span>
       <input type="email" name="email" className="govuk-input" />
       <br />
+      <br />
       <label class="govuk-label" for="phonenumber">
       Phone Number
       </label>
