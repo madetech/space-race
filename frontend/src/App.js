@@ -12,7 +12,7 @@ import awsLogo from './aws_logo_white.png'
 function App () {
     return <>
       <div className="header">
-      <a href="https://walthamforest.gov.uk/">
+      <a href="/">
          <img className="wf-logo" src={logo}/>
       </a>
       <a href="https://aws.amazon.com/">
