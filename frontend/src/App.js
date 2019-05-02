@@ -12,8 +12,13 @@ import awsLogo from './aws_logo_white.png'
 function App () {
     return <>
       <div className="header">
-        <img className="wf-logo" src={logo} />
+      <a href="https://walthamforest.gov.uk/">
+         <img className="wf-logo" src={logo}/>
+      </a>
+      <a href="https://aws.amazon.com/">
         <img className="aws-logo" src={awsLogo} />
+      </a>
+    
       </div>
       <Router>
           <Route path="/book/:id" render={({match}) => <BookingForm id={match.params.id} />} />
