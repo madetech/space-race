@@ -14,7 +14,7 @@ function App () {
         <img src={logo} />
       </div>
       <Router>
-          <Route path="/form" render={() => <BookingForm />} />
+          <Route path="/book/:id" render={({match}) => <BookingForm id={match.params.id} />} />
           <Route exact path="/" render={() => <SearchPage />} />
           <Route exact path="/venue/" render={() => <VenuePage />} />
           <Route exact path="/booking-confirmation/" render={() => <BookingConfirmation/>} />
