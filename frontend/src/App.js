@@ -15,9 +15,14 @@ function App () {
       </div>
       <Router>
           <Route path="/form" render={() => <BookingForm />} />
+<<<<<<< HEAD
           <Route exact path="/" render={() => <SearchPage />} />
           <Route exact path="/venue/" render={() => <VenuePage />} />
           <Route exact path="/bookingconfirmation/" render={() => <BookingConfirmation/>} />
+=======
+          <Route exact path="/" render={({history}) => <SearchPage history={history}/>} />
+          <Route path="/venue/:id" render={({match}) => <VenuePage id={match.params.id} />} />
+>>>>>>> 6256eff7b8cf3838d30c3ae5742eae5a8e63be6f
       </Router>
       <Footer />
     </>

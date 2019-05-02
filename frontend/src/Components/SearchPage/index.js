@@ -8,7 +8,7 @@ import Modal from '../Modal'
 import 'rheostat/initialize'
 import Rheostat from 'rheostat'
 
-export default function SearchPage () {
+export default function SearchPage (props) {
     const [venues, setVenues] = useState([])
     const [locationModalVisible, setLocationModalVisible] = useState(false)
     const [capacityModalVisible, setCapacityModalVisible] = useState(false)
@@ -29,7 +29,7 @@ export default function SearchPage () {
         const [lowerBound, upperBound] = capacityRangeSlider
         return venue.HACK_MEETING_SIZE >= lowerBound && venue.HACK_MEETING_SIZE <= upperBound
     }).filter(venue => {
-        if(!postcode) return true
+        if (!postcode) return true
         return venue.POST_CODE.startsWith(postcode)
     })
 
@@ -79,7 +79,11 @@ export default function SearchPage () {
             <br /><br />
         </GridColumn>
         <GridColumn className="venue-search-items">
-            {filteredVenues.map(venue => <VenueSearchItem id={venue.HACK_UUID} siteName={venue.SITE_NAME} />)}
+            {filteredVenues.map(venue => <VenueSearchItem
+                onClick={id => props.history.push("/venue/"+id)}
+                id={venue.HACK_UUID}
+                siteName={venue.SITE_NAME}
+            />)}
         </GridColumn>
     </GridRow>
 }
