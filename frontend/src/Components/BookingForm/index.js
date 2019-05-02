@@ -29,7 +29,7 @@ export default function BookingForm (props) {
           <span id="name-hint" class="govuk-hint">
           We’ll only use this to send you a booking confirmation
           </span>
-          <input type="text" name="fullname" className="govuk-input" />
+          <input type="text" name="fullname" className="govuk-input" required/>
           <br />
           <br />
           <label class="govuk-label" for="email">
@@ -38,7 +38,7 @@ export default function BookingForm (props) {
           <span id="email-hint" class="govuk-hint">
           We’ll only use this to send you a booking confirmation email
           </span>
-          <input type="email" name="email" className="govuk-input" />
+          <input type="email" name="email" className="govuk-input" required/>
           <br />
           <br />
           <label class="govuk-label" for="phonenumber">
@@ -47,10 +47,18 @@ export default function BookingForm (props) {
           <span id="phone-hint" class="govuk-hint">
           We need this to confirm your booking with you
           </span>
-          <input type="tel" name="phonenumber" className="govuk-input" />
+          <input type="tel" name="phonenumber" className="govuk-input" required/>
           <br />
           <br />
           <dl className="govuk-summary-list">
+            <div className="govuk-summary-list__row">
+              <dt className="govuk-summary-list__key">
+                Venue
+              </dt>
+              <dd className="govuk-summary-list__value float-content-right">
+                {venue.SITE_NAME}
+              </dd>
+            </div>
             <div className="govuk-summary-list__row">
               <dt className="govuk-summary-list__key">
                 Price

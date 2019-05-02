@@ -40,6 +40,9 @@ export default function VenuePage (props) {
             <GridColumn>
                 <Link to={'/'} className="govuk-back-link">Back</Link>
                 <h1>{venue.SITE_NAME}</h1>
+                <div className="venue-image-container">
+                  <div className="venue-image" style={{ "background-image": "url(/venue_images/" + venue.HACK_UUID + "/1.jpg)"}}></div>
+                </div>
                 <Link to={'/book/' + props.id} className="govuk-button govuk-button--start"
                       role="button" draggable="false">
                     Book now
