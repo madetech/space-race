@@ -1,0 +1,17 @@
+.BackButton {
+color: #fff !important;
+text-transform: uppercase;
+background: #60a3bc;
+padding: 5px;
+border-radius: 50px;
+display: inline;
+margin-left: 5px;
+border: none;
+}
+
+.BackButton:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
