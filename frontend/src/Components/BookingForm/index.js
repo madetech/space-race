@@ -53,6 +53,14 @@ export default function BookingForm (props) {
           <dl className="govuk-summary-list">
             <div className="govuk-summary-list__row">
               <dt className="govuk-summary-list__key">
+                Venue
+              </dt>
+              <dd className="govuk-summary-list__value float-content-right">
+                {venue.SITE_NAME}
+              </dd>
+            </div>
+            <div className="govuk-summary-list__row">
+              <dt className="govuk-summary-list__key">
                 Price
               </dt>
               <dd className="govuk-summary-list__value float-content-right">
