@@ -29,11 +29,11 @@ export default function SearchPage () {
 
     return <GridRow>
         <GridColumn>
-          <strong class="govuk-tag" onClick={() => setLocationModalVisible(true)}>Location</strong>&nbsp;&nbsp;
+          <strong className="govuk-tag" onClick={() => setLocationModalVisible(true)}>Location</strong>&nbsp;&nbsp;
             <Modal onClose={(e) => {e.preventDefault(); setLocationModalVisible(false)}} visible={locationModalVisible}>
               Location modal
             </Modal>
-          <strong class="govuk-tag" onClick={() => setCapacityModalVisible(true)}>Size</strong>&nbsp;&nbsp;
+          <strong className="govuk-tag" onClick={() => setCapacityModalVisible(true)}>Size</strong>&nbsp;&nbsp;
             <Modal onClose={(e) => {e.preventDefault(); setCapacityModalVisible(false)}} visible={capacityModalVisible}>
               <Rheostat
                 min={4}
@@ -44,7 +44,7 @@ export default function SearchPage () {
               <h1>{capacityRangeSlider[0]}</h1>
               <h1>{capacityRangeSlider[1]}</h1>
             </Modal>
-          <strong class="govuk-tag" onClick={() => setDateModalVisible(true)}>Date</strong>
+          <strong className="govuk-tag" onClick={() => setDateModalVisible(true)}>Date</strong>
             <Modal onClose={(e) => {e.preventDefault(); setDateModalVisible(false)}} visible={dateModalVisible}>
               Date modal
             </Modal>
