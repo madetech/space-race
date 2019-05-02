@@ -6,12 +6,14 @@ import BookingForm from './Components/BookingForm';
 import SearchPage from './Components/SearchPage'
 import VenuePage from './Components/VenuePage'
 import BookingConfirmation from './Components/BookingConfirmation'
-import logo from './logo.png'
+import logo from './logo_hi_res_white.png'
+import awsLogo from './aws_logo_white.png'
 
 function App () {
     return <>
-      <div>
-        <img src={logo} />
+      <div className="header">
+        <img className="wf-logo" src={logo} />
+        <img className="aws-logo" src={awsLogo} />
       </div>
       <Router>
           <Route path="/book/:id" render={({match}) => <BookingForm id={match.params.id} />} />
