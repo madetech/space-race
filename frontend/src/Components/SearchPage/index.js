@@ -5,7 +5,6 @@ import GridRow from '../GridRow'
 import GridColumn from '../GridColumn'
 
 export default function SearchPage () {
-
     const [venues, setVenues] = useState([])
     useEffect(() => {
         if (venues.length > 0) return
