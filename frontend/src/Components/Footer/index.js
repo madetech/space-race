@@ -7,8 +7,12 @@ export default function Footer() {
         <div className="govuk-width-container ">
             <div className="govuk-footer__meta">
                 <div className="govuk-footer__meta-item govuk-footer__meta-item--grow">
-                  <img className="mt-logo" src={madeTechLogo} />
-                  <img className="fg-logo" src={fgLogo} />
+                <a href= "https://www.madetech.com/">
+                    <img className="mt-logo" src={madeTechLogo} />
+                </a>
+                <a href="https://www.wearefuturegov.com/">
+                    <img className="fg-logo" src={fgLogo} />    
+                </a>
                 </div>
             </div>
         </div>
