@@ -1,6 +1,5 @@
 import React from 'react';
-import  './BackButton.scss'
 
 export default function BackButton() {
-    return <button onclick="window.history.back();" className="BackButton">Go Back</button>
+    return <button onclick="window.history.back();" className="BackButton govuk-back-link">Go Back</button>
 }
