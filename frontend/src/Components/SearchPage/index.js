@@ -5,6 +5,8 @@ import './SearchPage.scss'
 import GridRow from '../GridRow'
 import GridColumn from '../GridColumn'
 import Modal from '../Modal'
+import 'rheostat/initialize';
+import Rheostat from 'rheostat';
 
 export default function SearchPage () {
 
@@ -12,6 +14,7 @@ export default function SearchPage () {
     const [locationModalVisible, setLocationModalVisible] = useState(false);
     const [capacityModalVisible, setCapacityModalVisible] = useState(false);
     const [dateModalVisible, setDateModalVisible] = useState(false);
+    const [capacityRangeSlider, updateCapacityRange] = useState([20, 50]);
 
     useEffect(() => {
       if (venues.length > 0) return
@@ -32,7 +35,14 @@ export default function SearchPage () {
             </Modal>
           <strong class="govuk-tag" onClick={() => setCapacityModalVisible(true)}>Size</strong>&nbsp;&nbsp;
             <Modal onClose={(e) => {e.preventDefault(); setCapacityModalVisible(false)}} visible={capacityModalVisible}>
-              Capacity modal
+              <Rheostat
+                min={4}
+                max={200}
+                values={capacityRangeSlider}
+                onValuesUpdated={range => updateCapacityRange(range.values)}
+              />
+              <h1>{capacityRangeSlider[0]}</h1>
+              <h1>{capacityRangeSlider[1]}</h1>
             </Modal>
           <strong class="govuk-tag" onClick={() => setDateModalVisible(true)}>Date</strong>
             <Modal onClose={(e) => {e.preventDefault(); setDateModalVisible(false)}} visible={dateModalVisible}>
