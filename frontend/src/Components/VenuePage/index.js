@@ -3,6 +3,7 @@ import GridColumn from '../GridColumn'
 import GridRow from '../GridRow'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './VenuePage.scss'
 
 export default function VenuePage (props) {
     const [venue, setVenue] = useState(null)
