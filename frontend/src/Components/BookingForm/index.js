@@ -68,7 +68,7 @@ export default function BookingForm (props) {
               </dd>
             </div>
           </dl>
-          <input type="submit" value="Send Request" className="govuk-button" />
+          <input type="submit" value="Book" className="govuk-button" />
           <br />
         </form>
       </GridColumn>
