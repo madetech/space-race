@@ -1,9 +1,19 @@
 import React from 'react';
 import GridRow from '../GridRow'
+import GridColumn from '../GridColumn';
 
-export default function BookingForm () {
+export default function BookingConfirmation () {
     return <GridRow>
-      <h1 className="govuk-heading-m">Confirmation</h1>
-      <h2 className="govuk-heading-s">You have been sent a confirmation email.</h2>
+      <GridColumn>
+      <div class="govuk-panel govuk-panel--confirmation">
+    <h1 class="govuk-panel__title">
+      Confirmation
+    </h1>
+    <div class="govuk-panel__body">
+      You gave been sent a confirmation email of your booking.
+    </div>
+  </div>
+      </GridColumn>
     </GridRow>
+    
 }
