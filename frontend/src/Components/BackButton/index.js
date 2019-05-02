@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function BackButton() {
-    return <button onclick="window.history.back();" className="BackButton govuk-back-link">Go Back</button>
+    return <a onClick={props.history.goBack} className="BackButton govuk-back-link">Back</a>
 }
