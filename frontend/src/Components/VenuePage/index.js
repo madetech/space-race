@@ -32,6 +32,9 @@ export default function VenuePage (props) {
     if (!venue) return <></>
     const position = [51.505, -0.09]
 
+    let isAvailable = function (parameter) {
+        return venue[parameter] == 'Y'
+    }
     return <>
         <GridRow>
             <GridColumn>
@@ -45,13 +48,62 @@ export default function VenuePage (props) {
             </GridColumn>
         </GridRow>
         <div>
-            {latlong ? <Map center={latlong} zoom={16} height={400}>
+            {latlong ? <Map center={latlong} zoom={16} height={120}>
                 <Marker anchor={latlong} payload={1} />
             </Map> : <></>}
         </div>
         <GridRow>
             <GridColumn>
-                more
+                <dl className="govuk-summary-list govuk-summary-list--no-border">
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            Maximum capacity
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {venue.HACK_MEETING_SIZE}
+                        </dd>
+                    </div>
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            WiFi?
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {isAvailable('HACK_WIFI') ? 'Yes' : 'No'}
+                        </dd>
+                    </div>
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            Approved premise for Marriages?
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {isAvailable('HACK_MARRIAGE') ? 'Yes' : 'No'}
+                        </dd>
+                    </div>
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            Catering?
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {isAvailable('HACK_CATERING') ? 'Yes' : 'No'}
+                        </dd>
+                    </div>
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            Alcohol allowed on site?
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {isAvailable('HACK_ALCOHOL') ? 'Yes' : 'No'}
+                        </dd>
+                    </div>
+                    <div className="govuk-summary-list__row">
+                        <dt className="govuk-summary-list__key">
+                            Late entry allowed?
+                        </dt>
+                        <dd className="govuk-summary-list__value">
+                            {isAvailable('HACK_LATE') ? 'Yes' : 'No'}
+                        </dd>
+                    </div>
+                </dl>
             </GridColumn>
         </GridRow>
 
