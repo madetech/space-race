@@ -22,7 +22,7 @@ export default function BookingForm (props) {
 
     return <GridRow>
       <GridColumn>
-        <form className="BookingForm govuk-form-group">
+        <form className="BookingForm govuk-form-group" onSubmit={e => {e.preventDefault(); window.location.href = 'https://products.payments.service.gov.uk/pay/4bb29fc29ac446b2b0ad2b853bb4642d'}}>
           <label class="govuk-label" for="fullname">
           Full Name
           </label>

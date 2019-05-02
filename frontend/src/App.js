@@ -18,10 +18,10 @@ function App () {
       <a href="https://aws.amazon.com/">
         <img className="aws-logo" src={awsLogo} />
       </a>
-    
+
       </div>
       <Router>
-          <Route path="/book/:id" render={({match}) => <BookingForm id={match.params.id} />} />
+          <Route path="/book/:id" render={({match, history}) => <BookingForm history={history} id={match.params.id} />} />
           <Route exact path="/booking-confirmation/" render={() => <BookingConfirmation/>} />
           <Route exact path="/" render={({history}) => <SearchPage history={history}/>} />
           <Route path="/venue/:id" render={({match}) => <VenuePage id={match.params.id} />} />
