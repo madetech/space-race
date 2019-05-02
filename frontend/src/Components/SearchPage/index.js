@@ -33,7 +33,7 @@ export default function SearchPage () {
     console.log(venues)
 
     return <GridRow>
-        <GridColumn>
+        <GridColumn className="filter-options">
           <strong className="govuk-tag" onClick={() => setLocationModalVisible(true)}>Location</strong>&nbsp;&nbsp;
             <Modal onClose={(e) => {e.preventDefault(); setLocationModalVisible(false)}} visible={locationModalVisible}>
               Location modal
