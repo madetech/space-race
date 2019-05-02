@@ -43,7 +43,9 @@ export default function SearchPage (props) {
             }} visible={locationModalVisible}>
                 <div className="govuk-form-group">
                     <label className="govuk-label" htmlFor="event-name">
-                        Postcode
+                        <h2>
+                          Postcode
+                        </h2>
                     </label>
                     <input
                         className="govuk-input"
@@ -60,14 +62,15 @@ export default function SearchPage (props) {
                 e.preventDefault()
                 setCapacityModalVisible(false)
             }} visible={capacityModalVisible}>
+              <h2>Number of people</h2>
                 <Rheostat
                     min={4}
                     max={200}
                     values={capacityRangeSlider}
                     onValuesUpdated={range => updateCapacityRange(range.values)}
                 />
-                <h1>{capacityRangeSlider[0]}</h1>
-                <h1>{capacityRangeSlider[1]}</h1>
+                <h3 className="capacity-minimum">{capacityRangeSlider[0]}</h3>
+                <h3 className="capacity-maximum">{capacityRangeSlider[1]}</h3>
             </Modal>
             <strong className="govuk-tag" onClick={() => setDateModalVisible(true)}>Date</strong>
             <Modal onClose={(e) => {

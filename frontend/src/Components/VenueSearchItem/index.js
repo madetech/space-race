@@ -9,6 +9,8 @@ export default function VenueSearchItem (props) {
             {props.siteName}
           </h3>
         </div>
-        <img className="featured" src={image} />
+        <div classNAme="venue-image">
+          <img className="featured" src={"/venue_images/" + props.id + "/1.jpg"} />
+        </div>
     </div>
 }
