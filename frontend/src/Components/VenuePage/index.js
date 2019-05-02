@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Map from 'pigeon-maps'
 import Marker from 'pigeon-marker'
-
+import './VenuePage.scss'
 
 export default function VenuePage (props) {
     const [venue, setVenue] = useState(null)
