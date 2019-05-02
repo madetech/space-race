@@ -82,9 +82,6 @@ export default function SearchPage (props) {
             </Modal>
             <br /><br />
             <img className="sort-icon" src={SortingIcon} />
-            <p className="sort-text">
-              Sort by Most Relevant
-            </p>
         </GridColumn>
         <GridColumn className="venue-search-items">
             {filteredVenues.map(venue => <VenueSearchItem

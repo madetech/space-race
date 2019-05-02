@@ -22,6 +22,7 @@ export default function BookingForm (props) {
 
     return <GridRow>
       <GridColumn>
+        <BackButton history={props.history} />
         <form className="BookingForm govuk-form-group" onSubmit={e => {e.preventDefault(); window.location.href = 'https://products.payments.service.gov.uk/pay/fa1108564bd64c979cf706c5b0484aea'}}>
           <label class="govuk-label" for="fullname">
           Full Name
