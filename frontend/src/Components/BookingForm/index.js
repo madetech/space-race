@@ -4,7 +4,7 @@ import GridRow from '../GridRow';
 import GridColumn from '../GridColumn';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import BackButton from '.,/BackButton'
+import BackButton from '../BackButton'
 
 export default function BookingForm (props) {
     const [venue, setVenue] = useState({})
