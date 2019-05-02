@@ -12,6 +12,7 @@ import Marriage from '../../marriage.png'
 import Catering from '../../catering.png'
 import Alcohol from '../../alcohol.png'
 import LateEntry from '../../late.png'
+import Price from '../../price.png'
 
 export default function VenuePage (props) {
     const [venue, setVenue] = useState(null)
@@ -64,6 +65,17 @@ export default function VenuePage (props) {
         <GridRow>
             <GridColumn>
                 <dl className="govuk-summary-list govuk-summary-list--no-border">
+                    <div className="govuk-summary-list__row">
+                        <img className="venue-detail-icon" src={Price} />
+                        <div className="venue-text">
+                          <dt className="govuk-summary-list__key">
+                              Price
+                          </dt>
+                          <dd className="govuk-summary-list__value">
+                              £{venue.HACK_MEETING_SIZE * 2.5}
+                          </dd>
+                         </div>
+                    </div>
                     <div className="govuk-summary-list__row">
                         <img className="venue-detail-icon" src={MaximumCap} />
                         <div className="venue-text">
