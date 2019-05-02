@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom'
 import Map from 'pigeon-maps'
 import Marker from 'pigeon-marker'
 import './VenuePage.scss'
+import MaximumCap from '../../meeting_size.png'
+import WiFi from '../../wifi.png'
+import Marriage from '../../marriage.png'
+import Catering from '../../catering.png'
+import Alcohol from '../../alcohol.png'
+import LateEntry from '../../late.png'
 
 export default function VenuePage (props) {
     const [venue, setVenue] = useState(null)
@@ -59,52 +65,70 @@ export default function VenuePage (props) {
             <GridColumn>
                 <dl className="govuk-summary-list govuk-summary-list--no-border">
                     <div className="govuk-summary-list__row">
-                        <dt className="govuk-summary-list__key">
-                            Maximum capacity
-                        </dt>
-                        <dd className="govuk-summary-list__value">
-                            {venue.HACK_MEETING_SIZE}
-                        </dd>
+                        <img className="venue-detail-icon" src={MaximumCap} />
+                        <div className="venue-text">
+                          <dt className="govuk-summary-list__key">
+                              Maximum capacity
+                          </dt>
+                          <dd className="govuk-summary-list__value">
+                              {venue.HACK_MEETING_SIZE}
+                          </dd>
+                         </div>
                     </div>
                     <div className="govuk-summary-list__row">
-                        <dt className="govuk-summary-list__key">
-                            WiFi?
-                        </dt>
-                        <dd className="govuk-summary-list__value">
-                            {isAvailable('HACK_WIFI') ? 'Yes' : 'No'}
-                        </dd>
+                      <img className="venue-detail-icon" src={WiFi} />
+                        <div className="venue-text">
+                          <dt className="govuk-summary-list__key">
+                              WiFi?
+                          </dt>
+                          <dd className="govuk-summary-list__value">
+                              {isAvailable('HACK_WIFI') ? 'Yes' : 'No'}
+                          </dd>
+                        </div>
                     </div>
                     <div className="govuk-summary-list__row">
+                      <img className="venue-detail-icon" src={Marriage} />
+                      <div className="venue-text">
                         <dt className="govuk-summary-list__key">
                             Approved premise for Marriages?
                         </dt>
                         <dd className="govuk-summary-list__value">
                             {isAvailable('HACK_MARRIAGE') ? 'Yes' : 'No'}
                         </dd>
+                      </div>
                     </div>
                     <div className="govuk-summary-list__row">
+                      <img className="venue-detail-icon" src={Catering} />
+                      <div className="venue-text">
                         <dt className="govuk-summary-list__key">
                             Catering?
                         </dt>
                         <dd className="govuk-summary-list__value">
                             {isAvailable('HACK_CATERING') ? 'Yes' : 'No'}
                         </dd>
+                      </div>
                     </div>
                     <div className="govuk-summary-list__row">
+                      <img className="venue-detail-icon" src={Alcohol} />
+                      <div className="venue-text">
                         <dt className="govuk-summary-list__key">
                             Alcohol allowed on site?
                         </dt>
                         <dd className="govuk-summary-list__value">
                             {isAvailable('HACK_ALCOHOL') ? 'Yes' : 'No'}
                         </dd>
+                      </div>
                     </div>
                     <div className="govuk-summary-list__row">
+                      <img className="venue-detail-icon" src={LateEntry} />
+                      <div className="venue-text">
                         <dt className="govuk-summary-list__key">
                             Late entry allowed?
                         </dt>
                         <dd className="govuk-summary-list__value">
                             {isAvailable('HACK_LATE') ? 'Yes' : 'No'}
                         </dd>
+                      </div>
                     </div>
                     <Link to={'/book/' + props.id} className="govuk-button govuk-button--start"
                       role="button" draggable="false">
