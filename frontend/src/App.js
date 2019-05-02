@@ -13,7 +13,7 @@ function App () {
         <img src={logo} />
       </div>
       <Router>
-          <Route path="/form" render={() => <BookingForm />} />
+          <Route path="/book/:id" render={({match}) => <BookingForm id={match.params.id} />} />
           <Route exact path="/" render={({history}) => <SearchPage history={history}/>} />
           <Route path="/venue/:id" render={({match}) => <VenuePage id={match.params.id} />} />
       </Router>

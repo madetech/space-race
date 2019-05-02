@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import GridColumn from '../GridColumn'
 import GridRow from '../GridRow'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export default function VenuePage (props) {
     const [venue, setVenue] = useState(null)
@@ -23,7 +24,9 @@ export default function VenuePage (props) {
         <GridRow>
             <GridColumn>
                 <h1>{venue.SITE_NAME}</h1>
-                asdasd
+                <Link to={"/book/"+props.id} className="govuk-button govuk-button--start" role="button" draggable="false">
+                    Book now
+                </Link>
             </GridColumn>
         </GridRow>
     </>
