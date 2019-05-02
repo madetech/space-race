@@ -1,44 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import VenueSearchItem from '../VenueSearchItem'
 import './SearchPage.scss'
+import GridRow from '../GridRow'
+import GridColumn from '../GridColumn'
+import Modal from '../Modal'
 
 export default function SearchPage () {
 
     const [venues, setVenues] = useState([]);
-    const [locationModalVisible, setVisibleStatus] = useState(false);
+    const [locationModalVisible, setLocationModalVisible] = useState(false);
+    const [capacityModalVisible, setCapacityModalVisible] = useState(false);
+    const [dateModalVisible, setDateModalVisible] = useState(false);
 
     useEffect(() => {
-      if(venues.length > 0) return;
+      if (venues.length > 0) return
 
       axios.get('api.json')
         .then(function (response) {
           setVenues(response.data)
-
         })
-
     })
 
-    console.log(venues);
+    console.log(venues)
 
-  return <div className="govuk-width-container">
-            <main className="govuk-main-wrapper">
-                <div className="govuk-grid-row">
-                    <div className="govuk-grid-column-two-thirds">
-                      <strong class="govuk-tag" onClick={() => setVisibleStatus(true)}>Location</strong>&nbsp;&nbsp;
-                      <div className="location-modal" style={{display: locationModalVisible ? 'inline-block' : 'none'}}>
-                        <a href="#" class="govuk-back-link" onClick={(e) => {e.preventDefault(); setVisibleStatus(false)}}>Close</a>
-                        This is the modal
-                      </div>
-                      <strong class="govuk-tag">Size</strong>&nbsp;&nbsp;
-                      <strong class="govuk-tag">Date</strong>
-                      <br /><br />
-                    </div>
-
-                    <div className="govuk-grid-column-two-thirds venue-search-items">
-                      {venues.map(venue => <VenueSearchItem siteName={venue.SITE_NAME} />)}
-                    </div>
-                  </div>
-            </main>
-        </div>
+    return <GridRow>
+        <GridColumn>
+          <strong class="govuk-tag" onClick={() => setLocationModalVisible(true)}>Location</strong>&nbsp;&nbsp;
+            <Modal onClose={(e) => {e.preventDefault(); setLocationModalVisible(false)}} visible={locationModalVisible}>
+              Location modal
+            </Modal>
+          <strong class="govuk-tag" onClick={() => setCapacityModalVisible(true)}>Size</strong>&nbsp;&nbsp;
+            <Modal onClose={(e) => {e.preventDefault(); setCapacityModalVisible(false)}} visible={capacityModalVisible}>
+              Capacity modal
+            </Modal>
+          <strong class="govuk-tag" onClick={() => setDateModalVisible(true)}>Date</strong>
+            <Modal onClose={(e) => {e.preventDefault(); setDateModalVisible(false)}} visible={dateModalVisible}>
+              Date modal
+            </Modal>
+          <br /><br />
+      </GridColumn>
+      <GridColumn className="venue-search-items">
+        {venues.map(venue => <VenueSearchItem siteName={venue.SITE_NAME} />)}
+      </GridColumn>
+    </GridRow>
 }

@@ -1,0 +1,43 @@
+HACK_UUID,SITE_NAME,TOWN,POST_CODE,HACK_TYPE,HACK_WIFI,HACK_MARRIAGE,HACK_CATERING,HACK_ALCOHOL,HACK_LATE,HACK_MEETING_SIZE
+e91b3f7c-0de4-490c-8794-ee9664f33b32,Abbotts Park and Pavilion,Leyton,E10 7LZ,Venue,Y,Y,N,Y,Y,30
+dee0b14b-e53b-44f9-943c-4e2c51509e6a,Acacia Road Playground,Leytonstone,E174JF,Meeting Room,N,Y,Y,Y,N,8
+58fd991f-d094-4de6-992c-e8aeb8ef5b5e,Ainslie Wood Sports Ground,Chingford,E17 5JR,Hall,Y,N,Y,N,N,100
+68d24073-1946-4758-8207-3630b0ea98dc,Amenity Land corner of Hainault Road (69),Leytonstone,E10 5QH,Meeting Room,N,N,Y,N,N,200
+697a79d1-e230-4bc2-a13b-a9e5a80c43d3,Bluehouse Field,Chingford,E10 6AE,Venue,N,Y,Y,Y,N,50
+841d6ff0-9023-45a0-82fc-632646389f1b,Bridge Road Playground,Walthamstow,E10 7PB,Meeting Room,Y,N,Y,Y,N,4
+e9307998-41da-4822-bd40-6b731befb3e4,Cann Hall Park,Leyton,E10 6DA,Hall,N,N,N,Y,Y,12
+16f72424-5d5a-45c5-8223-2a86536a97b4,Cavendish Playing Fields,Chingford,E4 8ST,Meeting Room,Y,Y,Y,Y,Y,75
+398c6653-22b9-4354-8fa1-655c6ddb5411,Chase Lane Park,Chingford,E11 1HE,Venue,N,Y,N,Y,Y,4
+1a443736-38ec-4dcb-a74a-20682ec29ba8,Cheney Row Open Space,Walthamstow,E17 6QB,Hall,N,Y,N,N,Y,4
+0b35ddb2-3d35-4188-85de-61ed7431b8aa,Conservation Area Greenway Avenue,Walthamstow,E17 7LF,Venue,Y,N,N,N,Y,40
+472fb06f-c9f7-49a5-a61d-16a4e872086a,Coppermill Park,Walthamstow,E4 8DB,Venue,Y,N,Y,N,Y,20
+296339f2-b705-4893-b40c-e18e2520bcb2,Coronation Gardens,Leyton,E17 5PE,Hall,N,N,Y,N,Y,40
+0e9bca35-f10f-4651-833d-bfe341b3c2a9,Dames Road Playground,Forest Gate,E17 6BJ,Venue,Y,Y,Y,N,Y,50
+ff956ba4-1de7-4e6a-8bea-864e078f3558,Drysdale Park,Chingford,E4 7EN,Meeting Room,N,Y,Y,Y,N,20
+0bc39e7b-df87-4fad-98aa-9bf6cf1a7696,Higham Hill Recreation Ground,Walthamstow,E10 7HU,Meeting Room,Y,N,Y,N,Y,75
+d549525e-df73-41a1-8ff4-c3c1199960cf,Keatley Green Play Area,Chingford,E17 5HS,Meeting Room,Y,N,Y,N,N,20
+a32dbf50-089a-4a20-9d42-e3fd27ecd9cc,Kitchener Park,Walthamstow,E11 4LF,Meeting Room,N,N,Y,N,N,100
+8482ea7e-3354-4755-bd20-b530f9d9c823,Land Area 9a Shaw Square,Walthamstow,E17,Hall,N,Y,N,N,N,20
+a3a6a402-bae2-4ada-aff9-3736b9d43551,Larks Wood & Playing Field,Chingford,E4 6LQ,Meeting Room,N,Y,N,N,Y,75
+031b0755-265e-4276-915b-aec6b735ec5c,Leyton Manor Park,Leytonstone,E11 1BA,Meeting Room,N,N,Y,Y,Y,200
+b1da3ebe-ba7a-41fa-9bb5-ae22f4e78306,Leyton Youth Sports Club & Ground,Leyton,E10 6RJ,Hall,Y,N,Y,N,N,12
+c78c043a-fe54-41d6-b5b9-903b13a88243,Lloyd Park - Biomass Building. The Friends building,Walthamstow,E15 2DD,Meeting Room,Y,Y,N,Y,N,50
+76efc0ed-a36b-4bf4-abdb-19868252cc7a,Lloyd Park - bowling clubhouse & Green,Walthamstow,E10 6AE,Meeting Room,Y,N,Y,Y,Y,100
+9ce3c9ff-5c74-443e-bcc1-43c0a46b734e,Low Hall Sports Ground,Walthamstow,E17 8AX,Venue,Y,N,N,Y,N,30
+0cc9eb35-ed55-4623-9046-87d8d19e6481,Mallinson Park Woods,Woodford Green,E17,Hall,Y,N,Y,Y,N,20
+3800d63c-d273-45a6-ade2-ba1e75779d3e,Mansfield Park,Chingford,E15 2AU,Meeting Room,Y,N,N,N,N,100
+c9350799-680c-4df5-8319-d48102f72c63,Memorial Garden 15 Bellamy Road,Chingford,E17 4BF,Venue,Y,N,N,N,Y,30
+ca7448e7-6c55-4876-ae6c-9a07231937ce,Montague Road Play Area,Leytonstone,E17 7AT,Hall,N,N,Y,N,N,4
+56942867-435e-44a3-abdb-e238caef916f,Outwood Common Playground,Billericay,E11 4JU,Meeting Room,N,N,N,Y,N,8
+faeabcb3-8ddb-44de-9b96-cab3ded04844,Queens Road Playground,Walthamstow,E17 3LJ,Venue,N,Y,Y,Y,Y,30
+fda97f97-e3cc-46ae-9c61-0e67795bb22b,Rolls Park Sports Complex,Chingford,E4 9JG,Meeting Room,Y,N,N,N,Y,100
+a06c92fa-25b7-4b7b-93b0-4b0f4d20e4f4,Salisbury Hall Playing Fields,Chingford,E4 8ST,Venue,Y,Y,Y,Y,N,50
+a847b1d1-a889-480b-945f-2083ed642593,Seymour Road Playground,Leytonstone,E17 4UH,Meeting Room,Y,N,N,N,N,200
+2ce8dd42-a48d-4154-8b3f-56d0d9260f03,Sidmouth Park,Leytonstone,E17 6JY,Hall,N,Y,Y,Y,Y,50
+9b64dc5a-0a3f-4381-b68d-2a69d772d8b7,St Egberts Playing Fields,Chingford,E4 7PR ,Venue,N,Y,N,Y,N,40
+21d1842b-794e-499d-b0ce-5c40fb8fd34d,St James Park,Walthamstow,E4 9EJ,Hall,Y,Y,Y,Y,N,200
+6b1feff1-3abf-41d6-9a7d-5988cdac1f3b,Linear Park,Leytonstone,E17 6QT,Meeting Room,N,N,N,Y,Y,75
+ba3201f6-beb5-4ca5-9029-08c2034db6d2,Vestry Road Playground,Walthamstow,E10 7AS,Meeting Room,Y,N,N,Y,Y,4
+3f980788-765a-4d84-8b5b-9588a187281e,Vincent Road,Chingford,E4 6HZ,Meeting Room,Y,N,N,Y,Y,50
+73851473-7dab-4796-bed6-4ef8672fdd2c,Walthamstow Marshes,Walthamstow,E17 4JF,Hall,Y,Y,Y,N,N,30
+
