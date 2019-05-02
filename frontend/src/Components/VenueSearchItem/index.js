@@ -12,5 +12,10 @@ export default function VenueSearchItem (props) {
             {props.siteName}
           </h3>
         </div>
+        <div className="venue-price">
+          <h3>
+            £{props.sitePrice}
+          </h3>
+        </div>
     </div>
 }

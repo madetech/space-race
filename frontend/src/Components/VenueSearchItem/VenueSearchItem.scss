@@ -23,6 +23,7 @@ img.featured {
 .venue-title {
   width: 66%;
   display: inline-block;
+  padding-left: 10px;
 }
 .venue-image {
   position: relative;
@@ -31,4 +32,8 @@ img.featured {
   min-height: 229px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.venue-price {
+  float: right;
+  margin-right: 30px; 
 }

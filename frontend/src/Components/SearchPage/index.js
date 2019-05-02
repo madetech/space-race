@@ -7,6 +7,7 @@ import GridColumn from '../GridColumn'
 import Modal from '../Modal'
 import 'rheostat/initialize'
 import Rheostat from 'rheostat'
+import SortingIcon from '../../sorting.png'
 
 export default function SearchPage (props) {
     const [venues, setVenues] = useState([])
@@ -77,15 +78,20 @@ export default function SearchPage (props) {
                 e.preventDefault()
                 setDateModalVisible(false)
             }} visible={dateModalVisible}>
-                Date modal
+
             </Modal>
             <br /><br />
+            <img className="sort-icon" src={SortingIcon} />
+            <p className="sort-text">
+              Sort by Most Relevant
+            </p>
         </GridColumn>
         <GridColumn className="venue-search-items">
             {filteredVenues.map(venue => <VenueSearchItem
                 onClick={id => props.history.push("/venue/"+id)}
                 id={venue.HACK_UUID}
                 siteName={venue.SITE_NAME}
+                sitePrice={venue.HACK_MEETING_SIZE * 2.5}
             />)}
         </GridColumn>
     </GridRow>

@@ -11,7 +11,7 @@ export default function Footer() {
                     <img className="mt-logo" src={madeTechLogo} />
                 </a>
                 <a href="https://www.wearefuturegov.com/">
-                    <img className="fg-logo" src={fgLogo} />    
+                    <img className="fg-logo" src={fgLogo} />
                 </a>
                 </div>
             </div>

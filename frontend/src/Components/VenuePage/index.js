@@ -106,6 +106,10 @@ export default function VenuePage (props) {
                             {isAvailable('HACK_LATE') ? 'Yes' : 'No'}
                         </dd>
                     </div>
+                    <Link to={'/book/' + props.id} className="govuk-button govuk-button--start"
+                      role="button" draggable="false">
+                      Book now
+                    </Link>
                 </dl>
             </GridColumn>
         </GridRow>
