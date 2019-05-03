@@ -10,7 +10,7 @@ export default function BookingConfirmation () {
     Confirmation
   </h1>
   <div class="govuk-panel__body">
-    You gave been sent a confirmation email of your booking.
+    You have been sent a confirmation email of your booking.
   </div>
 </div>
     </GridColumn>
